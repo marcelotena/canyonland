@@ -1,0 +1,176 @@
+// HEADER INTRO SECTION
+// =======================
+
+#header_container{
+    @include container;
+position:relative;
+clear:both;
+width:960px;
+margin:0 auto 0 auto;
+z-index:1000;
+}
+#header{
+width: 100%;
+height:660px;
+@include backImage('../images/header_bg_color.png');
+background-color:#b0e1db;
+    @include breakpoint (max-width $medium){
+        height: $backgroundHeightMedium;
+    }
+    @include breakpoint (max-width $small){
+        height: $backgroundHeightSmall;
+    }
+}
+#header_bg1{
+position:absolute;
+width:100%;
+height:660px;
+background:transparent url(../images/cloud.png) left bottom repeat-x;
+z-index:1;
+    @include breakpoint (max-width $medium){
+        height: $backgroundHeightMedium;
+    }
+    @include breakpoint (max-width $small){
+        height: $backgroundHeightSmall;
+    }
+}
+#header_bg2{
+position:absolute;
+width:100%;
+height:660px;
+background:transparent url(../images/bg_floor.png) left bottom repeat-x;
+z-index:2;
+    @include breakpoint (max-width $medium){
+        height: $backgroundHeightMedium;
+    }
+    @include breakpoint (max-width $small){
+        height: $backgroundHeightSmall;
+    }
+}
+#header #title{
+position:absolute;
+top:32px;
+width:100%;
+z-index:1;
+}
+#header #title h1{
+margin:0 auto 0 auto;
+padding:0;
+text-indent:-10000px;
+width:480px;
+height:232px;
+background-image:url(../images/title.png);
+}
+#header #madeby{
+position:relative;
+z-index:10;
+}
+#header #madeby p,#header #madeby a{
+display:block;
+margin:0;
+padding:0;
+width:118px;
+height:128px;
+}
+#header #madeby p{
+position:static;
+top:0;
+left:0;
+}
+#header #madeby a{
+background-image:url(../images/herdingcats_logo.png);
+outline:none;
+text-indent:-10000px;
+}
+#presskit{
+position:absolute;
+top:32px;
+right:0;
+z-index:12;
+    width:151px;
+    height:65px;
+    margin:0;
+    padding:0;
+    @include breakpoint (max-width $small) {
+        position: relative;
+        margin: 0 auto;
+        top: 280px;
+    }
+}
+#presskit a{
+display:block;
+width:151px;
+height:65px;
+background-image:url(../images/presskit_bt_on.png);
+text-indent:-10000px;
+outline:none;
+}
+#tagline{
+position:relative;
+width:100%;
+top:150px;
+    @include breakpoint (max-width $small) {
+        top: 125px;
+    }
+}
+#tagline h2{
+text-align:center;
+font-size:24px;
+color:#fff;
+}
+#stores{
+position:relative;
+width:54.5%;
+    height: 57px;
+top:170px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 35px;
+    @include breakpoint (max-width $small) {
+        top: 290px;
+        width: 525px;
+    }
+}
+#stores p{
+margin:0;
+padding:0;
+}
+
+#appstore,#googleplay{
+position:relative;
+float:left;
+max-width:201px;
+height:auto;
+} 
+#appstore{
+margin-right:56px;
+}
+#trailer{
+position:absolute;
+top:392px;
+right:-46px;
+    @include breakpoint (max-width $medium) {
+        position: relative;
+        width: 425px;
+        margin: 0 auto;
+        top: 275px;
+    }
+    @include breakpoint (max-width $small) {
+        top: 350px;
+    }
+}
+#trailer p{
+width:325px;
+height:286px;
+background-image:url(../images/trailer.png);
+}
+#trailer p a{
+display:block;
+position:relative;
+top:60px;
+width:325px;
+height:225px;
+background:url(../images/play_on.png) center center no-repeat;
+outline:none;
+text-indent:-10000px;
+}

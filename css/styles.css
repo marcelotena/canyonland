@@ -81,3 +81,351 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   text-transform: uppercase;
 }
+
+#header_container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  clear: both;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  z-index: 1000;
+}
+#header_container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#header {
+  width: 100%;
+  height: 660px;
+  background: url("../images/header_bg_color.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #b0e1db;
+}
+@media (max-width: 1100px) {
+  #header {
+    height: 850px;
+  }
+}
+@media (max-width: 978px) {
+  #header {
+    height: 1000px;
+  }
+}
+
+#header_bg1 {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  background: transparent url(../images/cloud.png) left bottom repeat-x;
+  z-index: 1;
+}
+@media (max-width: 1100px) {
+  #header_bg1 {
+    height: 850px;
+  }
+}
+@media (max-width: 978px) {
+  #header_bg1 {
+    height: 1000px;
+  }
+}
+
+#header_bg2 {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  background: transparent url(../images/bg_floor.png) left bottom repeat-x;
+  z-index: 2;
+}
+@media (max-width: 1100px) {
+  #header_bg2 {
+    height: 850px;
+  }
+}
+@media (max-width: 978px) {
+  #header_bg2 {
+    height: 1000px;
+  }
+}
+
+#header #title {
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  z-index: 1;
+}
+
+#header #title h1 {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  text-indent: -10000px;
+  width: 480px;
+  height: 232px;
+  background-image: url(../images/title.png);
+}
+
+#header #madeby {
+  position: relative;
+  z-index: 10;
+}
+
+#header #madeby p, #header #madeby a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 118px;
+  height: 128px;
+}
+
+#header #madeby p {
+  position: static;
+  top: 0;
+  left: 0;
+}
+
+#header #madeby a {
+  background-image: url(../images/herdingcats_logo.png);
+  outline: none;
+  text-indent: -10000px;
+}
+
+#presskit {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 12;
+  width: 151px;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 978px) {
+  #presskit {
+    position: relative;
+    margin: 0 auto;
+    top: 280px;
+  }
+}
+
+#presskit a {
+  display: block;
+  width: 151px;
+  height: 65px;
+  background-image: url(../images/presskit_bt_on.png);
+  text-indent: -10000px;
+  outline: none;
+}
+
+#tagline {
+  position: relative;
+  width: 100%;
+  top: 150px;
+}
+@media (max-width: 978px) {
+  #tagline {
+    top: 125px;
+  }
+}
+
+#tagline h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+#stores {
+  position: relative;
+  width: 54.5%;
+  height: 57px;
+  top: 170px;
+  margin: 0 auto;
+  display: block;
+  padding-left: 35px;
+}
+@media (max-width: 978px) {
+  #stores {
+    top: 290px;
+    width: 525px;
+  }
+}
+
+#stores p {
+  margin: 0;
+  padding: 0;
+}
+
+#appstore, #googleplay {
+  position: relative;
+  float: left;
+  max-width: 201px;
+  height: auto;
+}
+
+#appstore {
+  margin-right: 56px;
+}
+
+#trailer {
+  position: absolute;
+  top: 392px;
+  right: -46px;
+}
+@media (max-width: 1100px) {
+  #trailer {
+    position: relative;
+    width: 425px;
+    margin: 0 auto;
+    top: 275px;
+  }
+}
+@media (max-width: 978px) {
+  #trailer {
+    top: 350px;
+  }
+}
+
+#trailer p {
+  width: 325px;
+  height: 286px;
+  background-image: url(../images/trailer.png);
+}
+
+#trailer p a {
+  display: block;
+  position: relative;
+  top: 60px;
+  width: 325px;
+  height: 225px;
+  background: url(../images/play_on.png) center center no-repeat;
+  outline: none;
+  text-indent: -10000px;
+}
+
+#bullets {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: url(../images/bg_pattern.png);
+}
+@media (max-width: 978px) {
+  #bullets {
+    height: 430px;
+  }
+}
+
+#bullets_container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  clear: both;
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+#bullets_container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#bullets_container h2 {
+  margin: 0 0 32px 0;
+  padding: 32px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+#bullets_container ul {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 80%;
+  height: 135px;
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+}
+#bullets_container ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (max-width: 978px) {
+  #bullets_container ul {
+    padding-left: 10%;
+  }
+}
+
+#bullets_container li {
+  position: relative;
+  float: left;
+  clear: none;
+  list-style: none;
+}
+
+#bullets_container li {
+  margin-right: 24px;
+}
+@media (max-width: 978px) {
+  #bullets_container li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    margin-top: 15px;
+  }
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 32px;
+}
+
+#footer_container {
+  position: relative;
+  clear: both;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+#footer_container p {
+  margin: 0;
+  padding: 0;
+}
+
+#footer #copy {
+  width: 320px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+@media (max-width: 978px) {
+  #footer #copy {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+#foot_appstore, #foot_googleplay {
+  position: relative;
+  float: right;
+  top: -30px;
+  margin-left: 16px;
+  margin-bottom: -20px;
+}
+
+#foot_googleplay {
+  margin-right: 20px;
+}

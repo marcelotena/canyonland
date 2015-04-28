@@ -1,0 +1,37 @@
+// FOOTER SECTION
+//=========================
+
+#footer{
+position:relative;
+width:100%;
+height:32px;
+}
+#footer_container{
+position:relative;
+clear:both;
+width:100%;
+margin:0 auto 0 auto;
+}
+#footer_container p{
+margin:0;
+padding:0;
+}
+#footer #copy{
+width:320px;
+margin:20px auto 0 auto;
+text-align:center;
+    @include breakpoint (max-width $small) {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+#foot_appstore,#foot_googleplay{
+position:relative;
+float:right;
+top:-30px;
+margin-left:16px;
+margin-bottom:-20px;
+}
+#foot_googleplay {
+    margin-right: 20px;
+}

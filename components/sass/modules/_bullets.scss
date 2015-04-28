@@ -1,0 +1,51 @@
+// BULLETS SECTION
+//======================
+
+#bullets{
+position:relative;
+width:100%;
+height:280px;
+background:url(../images/bg_pattern.png);
+    @include breakpoint (max-width $small) {
+        height: 430px;
+    }
+}
+#bullets_container{
+    @include container;
+position:relative;
+clear:both;
+width:960px;
+margin:0 auto 0 auto;
+}
+#bullets_container h2{
+margin:0 0 32px 0;
+padding:32px 0 0 0;
+text-align:center;
+font-size:24px;
+color:#fff;
+}
+#bullets_container ul{
+    @include container;
+  position: relative;
+  width: 80%;
+  height: 135px;
+  float: none;
+  text-align: center;
+    margin: 0 auto;
+    @include breakpoint (max-width $small) {
+        padding-left: 10%;
+    }
+}
+#bullets_container li{
+position:relative;
+float:left;
+clear:none;
+list-style:none;
+}
+#bullets_container li{
+margin-right:24px;
+    @include breakpoint (max-width $small) {
+        @include span(3);
+        margin-top: 15px;
+    }
+}
