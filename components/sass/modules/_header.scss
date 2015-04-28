@@ -103,6 +103,12 @@ left:0;
 background-image:url(../images/herdingcats_logo.png);
 outline:none;
 text-indent:-10000px;
+    @include breakpoint (max-width $smallest){
+        width: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
 }
 #presskit{
 position:absolute;
@@ -129,6 +135,9 @@ height:65px;
 background-image:url(../images/presskit_bt_on.png);
 text-indent:-10000px;
 outline:none;
+}
+#presskit a:hover{
+    background-image:url(../images/presskit_bt_off.png);
 }
 #tagline{
 position:relative;
@@ -223,8 +232,19 @@ top:60px;
 width:325px;
 height:225px;
 background:url(../images/play_on.png) center center no-repeat;
+    background-size: auto;
 outline:none;
 text-indent:-10000px;
+}
+#trailer p a:hover{
+    background:url(../images/play_off.png) center center no-repeat;
+    background-size: auto;
+    @include breakpoint (max-width $smallest) {
+        background-size: contain;
+    }
+}
+
+#trailer p a{
     @include breakpoint (max-width $smallest) {
         width: 40%;
         margin: 0 auto;

@@ -5,6 +5,9 @@
 position:relative;
 width:100%;
 height:32px;
+    @include breakpoint (max-width 660px) {
+        height: 120px;
+    }
 }
 #footer_container{
 position:relative;
@@ -24,6 +27,11 @@ text-align:center;
         text-align: left;
         margin-left: 20px;
     }
+    @include breakpoint (max-width 660px) {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
 }
 #foot_appstore,#foot_googleplay{
 position:relative;
@@ -34,4 +42,18 @@ margin-bottom:-20px;
 }
 #foot_googleplay {
     margin-right: 20px;
+}
+#footer-stores {
+    @include breakpoint (max-width 660px) {
+        width: 100%;
+        height: 38px;
+        text-align: center;
+        #foot_appstore,#foot_googleplay{
+            float: none;
+            width: 100%;
+            top: -10px;
+            padding-top: 15px;
+            margin-left: 0;
+        }
+    }
 }
