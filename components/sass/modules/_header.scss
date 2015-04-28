@@ -20,6 +20,9 @@ background-color:#b0e1db;
     @include breakpoint (max-width $small){
         height: $backgroundHeightSmall;
     }
+    @include breakpoint (max-width $smaller){
+        height: $backgroundHeightSmaller;
+    }
 }
 #header_bg1{
 position:absolute;
@@ -33,6 +36,9 @@ z-index:1;
     @include breakpoint (max-width $small){
         height: $backgroundHeightSmall;
     }
+    @include breakpoint (max-width $smaller){
+        height: $backgroundHeightSmaller;
+    }
 }
 #header_bg2{
 position:absolute;
@@ -45,6 +51,9 @@ z-index:2;
     }
     @include breakpoint (max-width $small){
         height: $backgroundHeightSmall;
+    }
+    @include breakpoint (max-width $smaller){
+        height: $backgroundHeightSmaller;
     }
 }
 #header #title{
@@ -60,10 +69,23 @@ text-indent:-10000px;
 width:480px;
 height:232px;
 background-image:url(../images/title.png);
+    @include breakpoint (max-width $smaller){
+        position: relative;
+        top: 100px;
+    }
+    @include breakpoint (max-width $smallest){
+        position: relative;
+        top: 100px;
+        width: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 #header #madeby{
 position:relative;
 z-index:10;
+    padding-left: 20px;
 }
 #header #madeby p,#header #madeby a{
 display:block;
@@ -96,6 +118,9 @@ z-index:12;
         margin: 0 auto;
         top: 280px;
     }
+    @include breakpoint (max-width $smaller){
+        top: 300px;
+    }
 }
 #presskit a{
 display:block;
@@ -111,6 +136,9 @@ width:100%;
 top:150px;
     @include breakpoint (max-width $small) {
         top: 125px;
+    }
+    @include breakpoint (max-width $smaller) {
+        top: 180px;
     }
 }
 #tagline h2{
@@ -130,6 +158,10 @@ top:170px;
         top: 290px;
         width: 525px;
     }
+    @include breakpoint (max-width $smallest) {
+        width: 100%;
+        padding-left: 0;
+    }
 }
 #stores p{
 margin:0;
@@ -141,6 +173,14 @@ position:relative;
 float:left;
 max-width:201px;
 height:auto;
+    @include breakpoint (max-width $smallest) {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        p {
+            text-align: center;
+        }
+    }
 } 
 #appstore{
 margin-right:56px;
@@ -158,11 +198,23 @@ right:-46px;
     @include breakpoint (max-width $small) {
         top: 350px;
     }
+    @include breakpoint (max-width $smallest) {
+        width: 90%;
+        top: 450px;
+        right: 0;
+    }
 }
 #trailer p{
 width:325px;
 height:286px;
 background-image:url(../images/trailer.png);
+    @include breakpoint (max-width $smallest) {
+        width: 100%;
+        margin: 0 auto;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 #trailer p a{
 display:block;
@@ -173,4 +225,11 @@ height:225px;
 background:url(../images/play_on.png) center center no-repeat;
 outline:none;
 text-indent:-10000px;
+    @include breakpoint (max-width $smallest) {
+        width: 40%;
+        margin: 0 auto;
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
