@@ -1,7 +1,8 @@
 // variables.scss
 // ==================
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 
 @include border-box-sizing; //uses border box sizing like the old IE, i.e.: padding doesn't add to the total size of the element.
 
@@ -24,10 +25,11 @@ $dark       : #000000;
 $light      : #ffffff;
 
 //Font variables
-$fontFamily: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontFamily: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$titleFont: 'Roboto Slab', serif;
 
 $regular    : 400;
 $bold       : 700;
 
-$headFont   : $bold 2em/2em $fontFamily;
+$headFont   : $bold 2em/2em $titleFont;
 $mainFont   : $regular 1em/1.5em $fontFamily;

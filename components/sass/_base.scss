@@ -1,0 +1,22 @@
+// base.scss
+// ==================
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font: $mainFont;
+    background: $light;
+    color: $dark;
+    overflow: hidden;
+}
+
+#{headings()} {
+    font: $headFont;
+    color: $dark;
+    font-weight: $bold;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
