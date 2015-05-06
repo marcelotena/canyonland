@@ -131,6 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent url(../images/cloud.png) left bottom repeat-x;
   z-index: 1;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #header_bg1 {
+    background: transparent url(../images/cloud_hd.png) left bottom repeat-x;
+    background-size: 48%;
+  }
+}
 @media (max-width: 1100px) {
   #header_bg1 {
     height: 850px;
@@ -153,6 +159,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 660px;
   background: transparent url(../images/bg_floor.png) left bottom repeat-x;
   z-index: 2;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #header_bg2 {
+    background: transparent url(../images/bg_floor_hd.png) left bottom repeat-x;
+    background-size: 68%;
+  }
 }
 @media (max-width: 1100px) {
   #header_bg2 {
@@ -201,6 +213,13 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center center;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #header #title h1 {
+    background-image: url("../images/title_hd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 #header #madeby {
   position: relative;
@@ -233,6 +252,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top left;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #header #madeby a {
+    background-image: url("../images/herdingcats_logo_hd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -268,9 +294,23 @@ h1, h2, h3, h4, h5, h6 {
   text-indent: -10000px;
   outline: none;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #presskit a {
+    background-image: url("../images/presskit_bt_hd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 #presskit a:hover {
   background-position: bottom;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #presskit a:hover {
+    background-image: url("../images/presskit_bt_hd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 #tagline {
@@ -353,6 +393,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   #appstore p .image {
     background-image: url("../images/appstore_purple_bt_hd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -367,6 +409,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   #googleplay p .image {
     background-image: url("../images/googleplay_purple_bt_hd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -399,6 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 #trailer p {
   width: 325px;
   height: 286px;
+  text-align: center;
   background-image: url(../images/trailer.png);
 }
 @media (max-width: 540px) {
@@ -414,31 +459,33 @@ h1, h2, h3, h4, h5, h6 {
 #trailer p a {
   display: block;
   position: relative;
-  top: 60px;
-  width: 325px;
-  height: 225px;
-  background: url(../images/play_on.png) center center no-repeat;
-  background-size: auto;
+  top: 80px;
+  margin: 0 auto;
+  width: 176px;
+  height: 176px;
+  background: url(../images/play.png) no-repeat;
+  background-position: top;
+  background-size: cover;
   outline: none;
   text-indent: -10000px;
 }
-
-#trailer p a:hover {
-  background: url(../images/play_off.png) center center no-repeat;
-  background-size: auto;
-}
-@media (max-width: 540px) {
-  #trailer p a:hover {
-    background-size: contain;
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #trailer p a {
+    background-image: url("../images/play_hd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
-@media (max-width: 540px) {
-  #trailer p a {
-    width: 40%;
-    margin: 0 auto;
-    background-position: center center;
-    background-size: 100%;
+#trailer p a:hover {
+  background: url(../images/play.png) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #trailer p a:hover {
+    background-image: url("../images/play_hd.png");
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -448,6 +495,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 280px;
   background: url(../images/bg_pattern.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets {
+    background-image: url("../images/bg_pattern_hd.png");
+    background-size: 54px 53px;
+  }
 }
 @media (max-width: 978px) {
   #bullets {
@@ -518,6 +571,54 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   clear: none;
   list-style: none;
+}
+#bullets_container li .image {
+  display: block;
+  width: 129px;
+  height: 128px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bullets_container li #bullet1 {
+  background-image: url(../images/bulletbg01.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets_container li #bullet1 {
+    background-image: url("../images/bulletbg01_hd.png");
+  }
+}
+#bullets_container li #bullet2 {
+  background-image: url(../images/bulletbg02.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets_container li #bullet2 {
+    background-image: url("../images/bulletbg02_hd.png");
+  }
+}
+#bullets_container li #bullet3 {
+  background-image: url(../images/bulletbg03.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets_container li #bullet3 {
+    background-image: url("../images/bulletbg03_hd.png");
+  }
+}
+#bullets_container li #bullet4 {
+  background-image: url(../images/bulletbg04.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets_container li #bullet4 {
+    background-image: url("../images/bulletbg04_hd.png");
+  }
+}
+#bullets_container li #bulletint {
+  background-image: url(../images/bulletinterrogantbg.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #bullets_container li #bulletint {
+    background-image: url("../images/bulletinterrogantbg_hd.png");
+  }
 }
 
 #bullets_container li {
@@ -598,9 +699,36 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 16px;
   margin-bottom: -20px;
 }
+#foot_appstore .image, #foot_googleplay .image {
+  display: block;
+  width: 119px;
+  height: 39px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#foot_appstore .image {
+  width: 131px;
+  height: 38px;
+  background-image: url(../images/appstore_bt.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #foot_appstore .image {
+    background-image: url("../images/appstore_bt_hd.png");
+  }
+}
 
 #foot_googleplay {
   margin-right: 20px;
+}
+#foot_googleplay .image {
+  background-image: url(../images/googleplay_bt.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  #foot_googleplay .image {
+    background-image: url("../images/googleplay_bt_hd.png");
+  }
 }
 
 @media (max-width: 660px) {
@@ -615,5 +743,8 @@ h1, h2, h3, h4, h5, h6 {
     top: -10px;
     padding-top: 15px;
     margin-left: 0;
+  }
+  #footer-stores #foot_appstore .image {
+    margin-top: 10px;
   }
 }

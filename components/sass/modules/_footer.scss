@@ -39,9 +39,31 @@ float:right;
 top:-30px;
 margin-left:16px;
 margin-bottom:-20px;
+    .image {
+        display: block;
+        width: 119px;
+        height: 39px;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+#foot_appstore {
+    .image{
+        width: 131px;
+        height: 38px;
+        background-image: url(../images/appstore_bt.png);
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+                background-image: url('../images/appstore_bt_hd.png');}
+    }
 }
 #foot_googleplay {
     margin-right: 20px;
+    .image{
+        background-image: url(../images/googleplay_bt.png);
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+                background-image: url('../images/googleplay_bt_hd.png');}
+    }
 }
 #footer-stores {
     @include breakpoint (max-width 660px) {
@@ -54,6 +76,11 @@ margin-bottom:-20px;
             top: -10px;
             padding-top: 15px;
             margin-left: 0;
+        }
+        #foot_appstore {
+            .image{
+                margin-top: 10px;
+            }
         }
     }
 }
