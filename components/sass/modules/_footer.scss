@@ -41,8 +41,8 @@ margin-left:16px;
 margin-bottom:-20px;
     .image {
         display: block;
-        width: 119px;
-        height: 39px;
+        width: 131px;
+        height: 40px;
         margin: 0 auto;
         background-size: contain;
         background-repeat: no-repeat;
@@ -50,8 +50,6 @@ margin-bottom:-20px;
 }
 #foot_appstore {
     .image{
-        width: 131px;
-        height: 38px;
         background-image: url(../images/appstore_bt.png);
         @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
                 background-image: url('../images/appstore_bt_hd.png');}

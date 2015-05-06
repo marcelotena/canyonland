@@ -59,9 +59,17 @@ z-index:2;
     }
     @include breakpoint (max-width $small){
         height: $backgroundHeightSmall;
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+            background:transparent url(../images/bg_floor_hd.png) left bottom repeat-x;
+            background-size: 100%;
+        }
     }
     @include breakpoint (max-width $smaller){
         height: $backgroundHeightSmaller;
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+            background:transparent url(../images/bg_floor_hd.png) left bottom repeat-x;
+            background-size: 100%;
+        }
     }
 }
 #header #title{
@@ -91,7 +99,7 @@ background-image:url(../images/title.png);
     }
     @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         background-image: url('../images/title_hd.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 }
@@ -118,13 +126,13 @@ outline:none;
 text-indent:-10000px;
     @include breakpoint (max-width $smallest){
         width: 80%;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: top left;
     }
     @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
         background-image: url('../images/herdingcats_logo_hd.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 }
@@ -248,7 +256,7 @@ margin-right:56px;
         background-image: url('../images/googleplay_purple_bt.png');
         @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
             background-image: url('../images/googleplay_purple_bt_hd.png');
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
         }
     }

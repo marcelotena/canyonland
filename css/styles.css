@@ -176,9 +176,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 1000px;
   }
 }
+@media screen and (max-width: 978px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 978px) and (-moz-min-device-pixel-ratio: 1.5), screen and (max-width: 978px) and (min-device-pixel-ratio: 1.5) {
+  #header_bg2 {
+    background: transparent url(../images/bg_floor_hd.png) left bottom repeat-x;
+    background-size: 100%;
+  }
+}
+
 @media (max-width: 783px) {
   #header_bg2 {
     height: 1200px;
+  }
+}
+@media screen and (max-width: 783px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 783px) and (-moz-min-device-pixel-ratio: 1.5), screen and (max-width: 783px) and (min-device-pixel-ratio: 1.5) {
+  #header_bg2 {
+    background: transparent url(../images/bg_floor_hd.png) left bottom repeat-x;
+    background-size: 100%;
   }
 }
 
@@ -216,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   #header #title h1 {
     background-image: url("../images/title_hd.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 }
@@ -249,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 540px) {
   #header #madeby a {
     width: 80%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
   }
@@ -257,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   #header #madeby a {
     background-image: url("../images/herdingcats_logo_hd.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 }
@@ -409,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   #googleplay p .image {
     background-image: url("../images/googleplay_purple_bt_hd.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -701,16 +714,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 #foot_appstore .image, #foot_googleplay .image {
   display: block;
-  width: 119px;
-  height: 39px;
+  width: 131px;
+  height: 40px;
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #foot_appstore .image {
-  width: 131px;
-  height: 38px;
   background-image: url(../images/appstore_bt.png);
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
