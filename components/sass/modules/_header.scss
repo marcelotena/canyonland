@@ -125,7 +125,6 @@ background-image:url(../images/herdingcats_logo.png);
 outline:none;
 text-indent:-10000px;
     @include breakpoint (max-width $smallest){
-        width: 80%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top left;
