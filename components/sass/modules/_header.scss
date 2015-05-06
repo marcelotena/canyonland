@@ -132,12 +132,13 @@ z-index:12;
 display:block;
 width:151px;
 height:65px;
-background-image:url(../images/presskit_bt_on.png);
+background-image:url(../images/presskit_bt.png);
+background-position: top;
 text-indent:-10000px;
 outline:none;
 }
 #presskit a:hover{
-    background-image:url(../images/presskit_bt_off.png);
+    background-position: bottom;
 }
 #tagline{
 position:relative;
@@ -193,6 +194,32 @@ height:auto;
 } 
 #appstore{
 margin-right:56px;
+    p{
+        .image {
+            display: block;
+            width: 201px;
+            height: 57px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            background-image: url('../images/appstore_purple_bt.png');
+            @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+                background-image: url('../images/appstore_purple_bt_hd.png');
+            }
+        }
+    }
+}
+#googleplay p{
+    .image {
+        display: block;
+        width: 201px;
+        height: 57px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        background-image: url('../images/googleplay_purple_bt.png');
+        @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (-moz-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url('../images/googleplay_purple_bt_hd.png');
+        }
+    }
 }
 #trailer{
 position:absolute;
@@ -232,7 +259,7 @@ top:60px;
 width:325px;
 height:225px;
 background:url(../images/play_on.png) center center no-repeat;
-    background-size: auto;
+background-size: auto;
 outline:none;
 text-indent:-10000px;
 }
